@@ -1,17 +1,18 @@
 {
   "name": "react-native-awesome-image",
   "version": "0.0.6",
-  "homepage": "https://github.com/vovkasm/react-native-awesome-image",
+  "homepage": "https://github.com/bachphuc/react-native-awesome-image",
   "summary": "An image component for react-native with persistent disk and memory caching",
   "license": "MIT",
   "authors": {
-    "Vladimir Timofeev": "vovkasm@gmail.com"
+    "Vladimir Timofeev": "vovkasm@gmail.com",
+    "phuclb": "trieuquangphuc123@gmail.com"
   },
   "platforms": {
     "ios": "8.0"
   },
   "source": {
-    "git": "https://github.com/vovkasm/react-native-awesome-image.git",
+    "git": "https://github.com/bachphuc/react-native-awesome-image.git",
     "tag": "v0.0.6"
   },
   "header_dir": "RNWebImage",

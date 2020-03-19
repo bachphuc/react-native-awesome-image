@@ -112,6 +112,7 @@ const styles = StyleSheet.create({
 ## Author
 
 [Vladimir Timofeev](https://github.com/vovkasm)
+[phuclb](https://github.com/bachphuc)
 
 ## Contributors
 
