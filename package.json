@@ -1,0 +1,56 @@
+{
+  "name": "react-native-awesome-image",
+  "version": "0.0.7",
+  "description": "An image component for react-native with persistent disk and memory caching",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.dist.json",
+    "prestart": "npm run build",
+    "start": "react-native start --projectRoot samples/SampleApp",
+    "run-sample-android": "react-native run-android --root samples/SampleApp",
+    "run-sample-ios": "react-native run-ios --project-path samples/SampleApp/ios",
+    "lint:js": "tslint -p tsconfig.json",
+    "test:android": "./gradlew check",
+    "test:ios": "xcodebuild test -workspace tests/TestApp/TestApp.xcworkspace -scheme TestApp -destination 'platform=iOS Simulator,name=iPhone 8'"
+  },
+  "keywords": [
+    "react-native",
+    "react-component", 
+    "ios",
+    "android",
+    "cache-image",
+    "cache",
+    "mobile"
+  ],
+  "author": "Vladimir Timofeev <vovkasm@gmail.com>, phuclb <trieuquangphuc123@gmail.com>",
+  "homepage": "https://github.com/bachphuc/react-native-awesome-image",
+  "bugs": {
+    "url": "https://github.com/bachphuc/react-native-awesome-image/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/bachphuc/react-native-awesome-image.git"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/runtime": "^7.5.5",
+    "@types/react": "^16.8.12",
+    "@types/react-native": "^0.60.0",
+    "@vovkasm/tslint-config": "^2.0.1",
+    "metro-react-native-babel-preset": "^0.55.0",
+    "prettier": "1.18.2",
+    "react": "16.8.6",
+    "react-native": "0.60.4",
+    "tslint": "^5.15.0",
+    "tslint-plugin-prettier": "^2.0.1",
+    "typescript": "^3.4.3"
+  },
+  "peerDependencies": {
+    "react-native": ">=0.55.0"
+  },
+  "dependencies": {
+    "tslib": "^1.9.0"
+  }
+}

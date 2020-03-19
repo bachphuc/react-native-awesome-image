@@ -1,0 +1,46 @@
+apply plugin: 'com.android.library'
+
+def safeExtGet(prop, fallback) {
+  return rootProject.ext.hasProperty(prop) ? rootProject.ext.get(prop) : fallback
+}
+
+def glideVersion = safeExtGet("glideVersion", "4.9.0")
+
+android {
+  compileSdkVersion safeExtGet('compileSdkVersion', 28)
+
+  defaultConfig {
+    minSdkVersion safeExtGet('minSdkVersion', 16)
+    targetSdkVersion safeExtGet('targetSdkVersion', 28)
+    versionCode 1
+    versionName "1.0"
+    lintOptions {
+      abortOnError false
+    }
+    consumerProguardFiles 'proguard-rules.pro'
+  }
+
+  if (safeExtGet("excludeWebImageAppGlideModule", false)) {
+    sourceSets.main.java.exclude "**/WebImageAppGlideModule.java"
+  }
+
+  testOptions {
+    unitTests.includeAndroidResources = true
+  }
+}
+
+
+dependencies {
+  annotationProcessor "com.github.bumptech.glide:compiler:${glideVersion}"
+  implementation("com.github.bumptech.glide:glide:${glideVersion}") {
+    exclude group: "com.android.support"
+  }
+  implementation "com.github.bumptech.glide:annotations:${glideVersion}"
+  implementation "com.github.bumptech.glide:okhttp3-integration:${glideVersion}"
+  annotationProcessor 'androidx.annotation:annotation:1.1.0'
+  implementation "androidx.fragment:fragment:1.0.0"
+  implementation 'com.facebook.react:react-native:+'
+  testImplementation 'junit:junit:4.12'
+  testImplementation 'org.mockito:mockito-core:3.0.0'
+  testImplementation 'org.robolectric:robolectric:4.3'
+}
