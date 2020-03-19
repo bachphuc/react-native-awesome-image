@@ -1,4 +1,4 @@
-package org.vovkasm.WebImage;
+package org.bachphuc.WebImage;
 
 import com.facebook.react.uimanager.LayoutShadowNode;
 import com.facebook.react.uimanager.Spacing;

@@ -1,4 +1,4 @@
-package org.vovkasm.WebImage;
+package org.bachphuc.WebImage;
 
 import com.bumptech.glide.annotation.GlideModule;
 import com.bumptech.glide.module.AppGlideModule;

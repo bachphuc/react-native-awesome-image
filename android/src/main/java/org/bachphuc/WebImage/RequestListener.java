@@ -1,4 +1,4 @@
-package org.vovkasm.WebImage;
+package org.bachphuc.WebImage;
 
 import android.graphics.Bitmap;
 
