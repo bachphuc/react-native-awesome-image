@@ -26,9 +26,9 @@ import com.facebook.yoga.YogaConstants;
 import java.util.HashMap;
 import java.util.Map;
 
-@ReactModule(name = WebImageViewManager.REACT_CLASS)
-class WebImageViewManager extends BaseViewManager<WebImageView, WebImageShadowNode> {
-    static final String REACT_CLASS = "WebImageView";
+@ReactModule(name = AwesomeWebImageViewManager.REACT_CLASS)
+class AwesomeWebImageViewManager extends BaseViewManager<AwesomeWebImageView, WebImageShadowNode> {
+    static final String REACT_CLASS = "AwesomeWebImageView";
 
     RequestListener mRequestListener = new RequestListener();
 
@@ -40,7 +40,7 @@ class WebImageViewManager extends BaseViewManager<WebImageView, WebImageShadowNo
 
     @Override
     protected @NonNull
-    WebImageView createViewInstance(@NonNull ThemedReactContext reactContext) {
+    AwesomeWebImageView createViewInstance(@NonNull ThemedReactContext reactContext) {
         RequestManager requestManager;
         Activity activity = getActivityForGlide(reactContext);
         if (activity != null) {
@@ -48,11 +48,11 @@ class WebImageViewManager extends BaseViewManager<WebImageView, WebImageShadowNo
         } else {
             requestManager = Glide.with(reactContext);
         }
-        return new WebImageView(reactContext, mRequestListener, requestManager);
+        return new AwesomeWebImageView(reactContext, mRequestListener, requestManager);
     }
 
     @Override
-    public void onDropViewInstance(@NonNull WebImageView view) {
+    public void onDropViewInstance(@NonNull AwesomeWebImageView view) {
         super.onDropViewInstance(view);
         view.clear();
     }
@@ -68,7 +68,7 @@ class WebImageViewManager extends BaseViewManager<WebImageView, WebImageShadowNo
     }
 
     @ReactProp(name = "source")
-    public void setSrc(WebImageView view, @Nullable ReadableMap source) {
+    public void setSrc(AwesomeWebImageView view, @Nullable ReadableMap source) {
         if (source == null) return;
         final String uriProp = source.getString("uri");
 
@@ -94,21 +94,21 @@ class WebImageViewManager extends BaseViewManager<WebImageView, WebImageShadowNo
     }
 
     @ReactProp(name = "resizeMode")
-    public void setResizeMode(WebImageView view, String resizeMode) {
-        @WebImageView.ScaleType int scaleType;
+    public void setResizeMode(AwesomeWebImageView view, String resizeMode) {
+        @AwesomeWebImageView.ScaleType int scaleType;
 
         switch (resizeMode) {
             case "contain":
-                view.setScaleType(WebImageView.SCALE_CONTAIN);
+                view.setScaleType(AwesomeWebImageView.SCALE_CONTAIN);
                 break;
             case "cover":
-                view.setScaleType(WebImageView.SCALE_COVER);
+                view.setScaleType(AwesomeWebImageView.SCALE_COVER);
                 break;
             case "stretch":
-                view.setScaleType(WebImageView.SCALE_STRETCH);
+                view.setScaleType(AwesomeWebImageView.SCALE_STRETCH);
                 break;
             case "center":
-                view.setScaleType(WebImageView.SCALE_CENTER);
+                view.setScaleType(AwesomeWebImageView.SCALE_CENTER);
         }
     }
 
@@ -119,7 +119,7 @@ class WebImageViewManager extends BaseViewManager<WebImageView, WebImageShadowNo
             "borderRightColor",
             "borderBottomColor"
     }, customType = "Color")
-    public void setBorderColor(WebImageView view, int index, @Nullable Integer color) {
+    public void setBorderColor(AwesomeWebImageView view, int index, @Nullable Integer color) {
         if (color == null) {
             color = Color.TRANSPARENT;
         }
@@ -137,7 +137,7 @@ class WebImageViewManager extends BaseViewManager<WebImageView, WebImageShadowNo
             ViewProps.BORDER_BOTTOM_RIGHT_RADIUS,
             ViewProps.BORDER_BOTTOM_LEFT_RADIUS
     }, defaultFloat = YogaConstants.UNDEFINED)
-    public void setBorderRadius(WebImageView view, int index, float borderRadius) {
+    public void setBorderRadius(AwesomeWebImageView view, int index, float borderRadius) {
         if (!YogaConstants.isUndefined(borderRadius)) {
             borderRadius = PixelUtil.toPixelFromDIP(borderRadius);
         }
@@ -150,7 +150,7 @@ class WebImageViewManager extends BaseViewManager<WebImageView, WebImageShadowNo
     }
 
     @Override
-    public void updateExtraData(@NonNull WebImageView view, Object extraData) {
+    public void updateExtraData(@NonNull AwesomeWebImageView view, Object extraData) {
         if (extraData instanceof ShadowBoxMetrics) {
             ShadowBoxMetrics bm = (ShadowBoxMetrics) extraData;
             view.setBoxMetrics(bm);

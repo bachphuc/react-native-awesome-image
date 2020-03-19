@@ -58,7 +58,7 @@ interface INativeProps extends ViewProperties {
   onWebImageError?: (e: NativeSyntheticEvent<IImageErrorEventData>) => void
   onWebImageLoad?: (e: NativeSyntheticEvent<IImageLoadEventData>) => void
 }
-const NativeWebImage = requireNativeComponent('WebImageView') as React.ComponentType<INativeProps>
+const NativeWebImage = requireNativeComponent('AwesomeWebImageView') as React.ComponentType<INativeProps>
 
 const OMIT_PROPS_FOR_NATIVE: { [x: string]: boolean } = {
   children: true,

@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const tslib_1 = require("tslib");
 const react_1 = tslib_1.__importDefault(require("react"));
 const react_native_1 = require("react-native");
-const NativeWebImage = react_native_1.requireNativeComponent('WebImageView');
+const NativeWebImage = react_native_1.requireNativeComponent('AwesomeWebImageView');
 const OMIT_PROPS_FOR_NATIVE = {
     children: true,
     onError: true,

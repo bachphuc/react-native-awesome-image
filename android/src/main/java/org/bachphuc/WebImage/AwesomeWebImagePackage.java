@@ -8,7 +8,7 @@ import com.facebook.react.uimanager.ViewManager;
 import java.util.Collections;
 import java.util.List;
 
-public class WebImagePackage implements ReactPackage {
+public class AwesomeWebImagePackage implements ReactPackage {
 
     @Override
     public List<NativeModule> createNativeModules(ReactApplicationContext reactContext) {
@@ -17,6 +17,6 @@ public class WebImagePackage implements ReactPackage {
 
     @Override
     public List<ViewManager> createViewManagers(ReactApplicationContext reactContext) {
-        return Collections.<ViewManager>singletonList(new WebImageViewManager());
+        return Collections.<ViewManager>singletonList(new AwesomeWebImageViewManager());
     }
 }

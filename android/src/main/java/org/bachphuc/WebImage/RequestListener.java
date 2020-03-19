@@ -17,7 +17,7 @@ class RequestListener implements com.bumptech.glide.request.RequestListener {
 
     @Override
     public boolean onLoadFailed(@Nullable GlideException e, Object model, Target target, boolean isFirstResource) {
-        WebImageView view = null;
+        AwesomeWebImageView view = null;
         if (target instanceof WebImageViewTarget) {
             view = ((WebImageViewTarget) target).getView();
         }
@@ -42,7 +42,7 @@ class RequestListener implements com.bumptech.glide.request.RequestListener {
 
     @Override
     public boolean onResourceReady(Object resource, Object model, Target target, DataSource dataSource, boolean isFirstResource) {
-        WebImageView view = null;
+        AwesomeWebImageView view = null;
         if (target instanceof WebImageViewTarget) {
             view = ((WebImageViewTarget) target).getView();
         }

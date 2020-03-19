@@ -9,8 +9,8 @@ import android.graphics.drawable.Drawable;
 import com.bumptech.glide.request.target.CustomViewTarget;
 import com.bumptech.glide.request.transition.Transition;
 
-public class WebImageViewTarget extends CustomViewTarget<WebImageView, Bitmap> {
-    WebImageViewTarget(WebImageView view) {
+public class WebImageViewTarget extends CustomViewTarget<AwesomeWebImageView, Bitmap> {
+    WebImageViewTarget(AwesomeWebImageView view) {
         super(view);
     }
 

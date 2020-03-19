@@ -22,7 +22,7 @@ class BoxMetrics {
 
     private int imageWidth = 0;
     private int imageHeight = 0;
-    private @WebImageView.ScaleType
+    private @AwesomeWebImageView.ScaleType
     int scaleType;
 
     private Radii borderRadii = new Radii();
@@ -40,7 +40,7 @@ class BoxMetrics {
     private Path borderPath = new Path();
     private Path contentPath = new Path();
 
-    BoxMetrics(@WebImageView.ScaleType int scaleType) {
+    BoxMetrics(@AwesomeWebImageView.ScaleType int scaleType) {
         this.scaleType = scaleType;
     }
 
@@ -78,7 +78,7 @@ class BoxMetrics {
         dirty = true;
     }
 
-    void setScaleType(@WebImageView.ScaleType int scaleType) {
+    void setScaleType(@AwesomeWebImageView.ScaleType int scaleType) {
         if (this.scaleType == scaleType) return;
         this.scaleType = scaleType;
         dirty = true;
@@ -120,11 +120,11 @@ class BoxMetrics {
 
         final float availableWidth = contentRect.width();
         final float availableHeight = contentRect.height();
-        if (scaleType == WebImageView.SCALE_STRETCH) {
+        if (scaleType == AwesomeWebImageView.SCALE_STRETCH) {
             final float sx = availableWidth / imageWidth;
             final float sy = availableHeight / imageHeight;
             contentMatrix.setScale(sx, sy);
-        } else if (scaleType == WebImageView.SCALE_CENTER) {
+        } else if (scaleType == AwesomeWebImageView.SCALE_CENTER) {
             final float dw = (availableWidth - imageWidth) * 0.5f;
             final float dh = (availableHeight - imageHeight) * 0.5f;
             float diffWidth = dw > 0 ? dw : 0f;
@@ -133,7 +133,7 @@ class BoxMetrics {
             paddingRect.inset(diffWidth, diffHeight);
             borderRect.inset(diffWidth, diffHeight);
             contentMatrix.postTranslate(dw, dh);
-        } else if (scaleType == WebImageView.SCALE_COVER) {
+        } else if (scaleType == AwesomeWebImageView.SCALE_COVER) {
             final float sx = availableWidth / imageWidth;
             final float sy = availableHeight / imageHeight;
             if (sx > sy) {
@@ -145,7 +145,7 @@ class BoxMetrics {
                 contentMatrix.setScale(sy, sy);
                 contentMatrix.postTranslate(diff, 0f);
             }
-        } else if (scaleType == WebImageView.SCALE_CONTAIN && imageWidth > 0f && imageHeight > 0f) {
+        } else if (scaleType == AwesomeWebImageView.SCALE_CONTAIN && imageWidth > 0f && imageHeight > 0f) {
             final float sx = availableWidth / imageWidth;
             final float sy = availableHeight / imageHeight;
             if (sx > sy) {

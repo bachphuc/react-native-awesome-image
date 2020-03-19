@@ -24,7 +24,7 @@ import com.facebook.yoga.YogaConstants;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 
-class WebImageView extends View {
+class AwesomeWebImageView extends View {
 
     @Retention(RetentionPolicy.SOURCE)
     @IntDef({SCALE_CONTAIN, SCALE_COVER, SCALE_STRETCH, SCALE_CENTER})
@@ -61,7 +61,7 @@ class WebImageView extends View {
     private RequestListener mGlideListener;
     private RequestManager mRequestManager;
 
-    public WebImageView(Context context, RequestListener glideListener, RequestManager requestManager) {
+    public AwesomeWebImageView(Context context, RequestListener glideListener, RequestManager requestManager) {
         super(context);
         mBoxMetrics = new BoxMetrics(mScaleType);
         mBitmapPaint.setAntiAlias(true);
