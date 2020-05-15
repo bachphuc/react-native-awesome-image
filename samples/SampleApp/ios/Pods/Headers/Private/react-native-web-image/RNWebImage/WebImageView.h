@@ -1,1 +1,1 @@
-../../../../../../../../WebImage/WebImage/WebImageView.h
+../../../../../../../../WebImage/WebImage/AwesomeWebImageView.h

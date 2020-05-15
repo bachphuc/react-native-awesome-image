@@ -1,6 +1,6 @@
 {
   "name": "react-native-awesome-image",
-  "version": "0.0.9",
+  "version": "0.1.0",
   "description": "An image component for react-native with persistent disk and memory caching",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",

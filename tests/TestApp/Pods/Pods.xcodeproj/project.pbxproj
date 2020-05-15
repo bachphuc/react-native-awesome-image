@@ -122,7 +122,7 @@
 		18A16557DA71299F94FC90292F9F3A26 /* UIView+React.m in Sources */ = {isa = PBXBuildFile; fileRef = C963797C0574C9FDB0820D26313E1BEE /* UIView+React.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1 -Wno-comma -Wno-shorten-64-to-32 -Wno-documentation"; }; };
 		18D9EA9D0249D45BE35F731D9D75462D /* RCTDatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B3D7464162B3C7C33E887DAE95D4187 /* RCTDatePicker.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1 -Wno-comma -Wno-shorten-64-to-32 -Wno-documentation"; }; };
 		1A8BA75EE42FEC0963A35A7AB092509D /* RCTComponentData.m in Sources */ = {isa = PBXBuildFile; fileRef = 43CB1963931B9558D16CF9BA224C3A07 /* RCTComponentData.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1 -Wno-comma -Wno-shorten-64-to-32 -Wno-documentation"; }; };
-		1B29818F3C827CCE85032F29B2A79857 /* WebImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = BDCE85051F0F7EC702CE12B59E423587 /* WebImageView.m */; };
+		1B29818F3C827CCE85032F29B2A79857 /* AwesomeWebImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = BDCE85051F0F7EC702CE12B59E423587 /* AwesomeWebImageView.m */; };
 		1BD8466EA2DA5574C7E0F1DE324D1545 /* RCTReloadCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = E1BCD15C8D69F8D74C3ACB0991E0E4D3 /* RCTReloadCommand.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1 -Wno-comma -Wno-shorten-64-to-32 -Wno-documentation"; }; };
 		1CD13C966D2B2A06EB17140D443CF6EC /* stl_logging.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CBF22EA341C5A119EC26441ED1EC5E3 /* stl_logging.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		1D66E156B8AD27CCEE5E2D175E50E2B5 /* DoubleConversion-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A513C5562FAF5DC86EB8D018135FDE23 /* DoubleConversion-dummy.m */; };
@@ -402,7 +402,7 @@
 		7385647AF22E08DA35FEB3BE0346F783 /* SDWebImageDownloader.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DB07FE23580C330E710BF061C3FB1DE /* SDWebImageDownloader.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		73E4D839AD26A44DECEED080AE9685F6 /* DispatchMessageQueueThread.h in Headers */ = {isa = PBXBuildFile; fileRef = F69EE1A39E7C181AEE3C098CE0A4A7AE /* DispatchMessageQueueThread.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		73EFC8A6E8630EA18BD1377E2D29E8C8 /* RCTLayoutAnimationGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = 8072A83CF4010F2CC877540DCC09FFE5 /* RCTLayoutAnimationGroup.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		74C2119E6EC8ACBF002E297225D31A81 /* WebImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = 01AFB9C0EB48D1EC2E9CCEDF9E84AA8A /* WebImageView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		74C2119E6EC8ACBF002E297225D31A81 /* AwesomeWebImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = 01AFB9C0EB48D1EC2E9CCEDF9E84AA8A /* AwesomeWebImageView.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		756508F66332DF225107FD25BDF0EB09 /* SDWebImage-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A14B61965B9AC0137A1DFD6E5602D6B5 /* SDWebImage-dummy.m */; };
 		75BC7D1A994B843641830A305E6A55B2 /* RCTGIFImageDecoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 8985581236A37884F82D585C0849000E /* RCTGIFImageDecoder.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		75E1E8967716404B6E4A8AFFBC46E88E /* SDImageCachesManagerOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 12422519995AE986DC055A0A6BDDDCA4 /* SDImageCachesManagerOperation.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -1378,7 +1378,7 @@
 		004677FC12260D58FBE9E924E099AD89 /* UIView+WebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+WebCache.m"; path = "SDWebImage/UIView+WebCache.m"; sourceTree = "<group>"; };
 		005B0849353AEC60979C6CA68E6CACA3 /* RCTStyleAnimatedNode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTStyleAnimatedNode.m; sourceTree = "<group>"; };
 		019AEBA823072C39BE57381D5EE8C6EE /* NSButton+WebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSButton+WebCache.h"; path = "SDWebImage/NSButton+WebCache.h"; sourceTree = "<group>"; };
-		01AFB9C0EB48D1EC2E9CCEDF9E84AA8A /* WebImageView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WebImageView.h; path = WebImage/WebImage/WebImageView.h; sourceTree = "<group>"; };
+		01AFB9C0EB48D1EC2E9CCEDF9E84AA8A /* AwesomeWebImageView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AwesomeWebImageView.h; path = WebImage/WebImage/AwesomeWebImageView.h; sourceTree = "<group>"; };
 		01EA47B2F68C5D8BE6A85B44A1E5C8C8 /* RCTTiming.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTTiming.h; sourceTree = "<group>"; };
 		0274FF9FF370B040BB8D1032E60EAE64 /* React-RCTWebSocket-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "React-RCTWebSocket-prefix.pch"; sourceTree = "<group>"; };
 		02DDB3361746756D50D938931CAF9BC2 /* React-cxxreact.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "React-cxxreact.xcconfig"; sourceTree = "<group>"; };
@@ -2013,7 +2013,7 @@
 		BD44C9EFA8894742CFDC45F28D58FD87 /* RCTMultilineTextInputView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTMultilineTextInputView.h; sourceTree = "<group>"; };
 		BD551F53A476AC8309343C9A6AF6E01A /* OCMBoxedReturnValueProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMBoxedReturnValueProvider.m; path = Source/OCMock/OCMBoxedReturnValueProvider.m; sourceTree = "<group>"; };
 		BD71E2539823621820F84384064C253A /* libReact-Core.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libReact-Core.a"; path = "libReact-Core.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BDCE85051F0F7EC702CE12B59E423587 /* WebImageView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WebImageView.m; path = WebImage/WebImage/WebImageView.m; sourceTree = "<group>"; };
+		BDCE85051F0F7EC702CE12B59E423587 /* AwesomeWebImageView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AwesomeWebImageView.m; path = WebImage/WebImage/AwesomeWebImageView.m; sourceTree = "<group>"; };
 		BDD1F17BEE52A2602776552C0599BC4B /* OCMConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMConstraint.h; path = Source/OCMock/OCMConstraint.h; sourceTree = "<group>"; };
 		BDFA89DB7B5B06769B01D5B1AEE326A8 /* RCTSafeAreaViewManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTSafeAreaViewManager.m; sourceTree = "<group>"; };
 		BE6E153035E4505EDD8CD1874FF13869 /* RCTRawTextViewManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTRawTextViewManager.m; sourceTree = "<group>"; };
@@ -3956,8 +3956,8 @@
 			children = (
 				0893F270D1D5A30ACDCD7F0FD593FDE7 /* WebImageSource.h */,
 				421928172064BB5093B7BB45A5A75A28 /* WebImageSource.m */,
-				01AFB9C0EB48D1EC2E9CCEDF9E84AA8A /* WebImageView.h */,
-				BDCE85051F0F7EC702CE12B59E423587 /* WebImageView.m */,
+				01AFB9C0EB48D1EC2E9CCEDF9E84AA8A /* AwesomeWebImageView.h */,
+				BDCE85051F0F7EC702CE12B59E423587 /* AwesomeWebImageView.m */,
 				484208625A3A27D8A033272AA3138B83 /* WebImageViewManager.h */,
 				1C2E1D083027DA4A2F68719242A9DB16 /* WebImageViewManager.m */,
 				BEB41924103BDCBE7D7AAF4B1289CEC3 /* Pod */,
@@ -4810,7 +4810,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				81568156F4F61DF8BBE9262E26C39FD4 /* WebImageSource.h in Headers */,
-				74C2119E6EC8ACBF002E297225D31A81 /* WebImageView.h in Headers */,
+				74C2119E6EC8ACBF002E297225D31A81 /* AwesomeWebImageView.h in Headers */,
 				29B14DC72FDD117A5101FF9B342AA78A /* WebImageViewManager.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -5590,7 +5590,7 @@
 			files = (
 				C10E7431B1245C2AF415CC7AA97ACCA6 /* react-native-awesome-image-dummy.m in Sources */,
 				B48939FAC9F28AF79FB318EB2B152571 /* WebImageSource.m in Sources */,
-				1B29818F3C827CCE85032F29B2A79857 /* WebImageView.m in Sources */,
+				1B29818F3C827CCE85032F29B2A79857 /* AwesomeWebImageView.m in Sources */,
 				2C588D8A83D57E0D09598C6F2F607D2C /* WebImageViewManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

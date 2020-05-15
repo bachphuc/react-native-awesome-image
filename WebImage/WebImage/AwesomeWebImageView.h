@@ -4,7 +4,7 @@
 
 #import "WebImageSource.h"
 
-@interface WebImageView : UIImageView
+@interface AwesomeWebImageView : UIImageView
 
 @property (nonatomic, copy) RCTDirectEventBlock onWebImageError;
 @property (nonatomic, copy) RCTDirectEventBlock onWebImageLoad;

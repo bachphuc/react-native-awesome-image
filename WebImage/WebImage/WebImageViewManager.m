@@ -1,6 +1,6 @@
 #import "WebImageViewManager.h"
 #import "WebImageSource.h"
-#import "WebImageView.h"
+#import "AwesomeWebImageView.h"
 
 #import <React/RCTViewManager.h>
 
@@ -23,13 +23,13 @@
 RCT_EXPORT_MODULE()
 
 - (UIView*)view {
-    WebImageView* view = [[WebImageView alloc] init];
+    AwesomeWebImageView* view = [[AwesomeWebImageView alloc] init];
     view.contentMode = UIViewContentModeScaleAspectFit;
     view.clipsToBounds = YES;
     return view;
 }
 
-RCT_CUSTOM_VIEW_PROPERTY(source, WebImageSource, WebImageView) {
+RCT_CUSTOM_VIEW_PROPERTY(source, WebImageSource, AwesomeWebImageView) {
     if (json) {
         view.source = [RCTConvert WebImageSource:json];
     }

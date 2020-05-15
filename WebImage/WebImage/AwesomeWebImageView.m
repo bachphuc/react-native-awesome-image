@@ -1,14 +1,14 @@
-#import "WebImageView.h"
+#import "AwesomeWebImageView.h"
 
 #import <SDWebImage/UIImageView+WebCache.h>
 
-@interface WebImageView ()
+@interface AwesomeWebImageView ()
 
 @property (nonatomic) BOOL needsImageUpdate;
 
 @end
 
-@implementation WebImageView
+@implementation AwesomeWebImageView
 
 - (void)setSource:(WebImageSource *)source {
     _source = source;

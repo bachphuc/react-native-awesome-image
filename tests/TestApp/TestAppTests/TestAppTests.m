@@ -2,7 +2,7 @@
 #import <OCMock/OCMock.h>
 
 #import <SDWebImage/SDWebImageManager.h>
-#import <RNWebImage/WebImageView.h>
+#import <RNWebImage/AwesomeWebImageView.h>
 
 @interface TestSDWebImageManager : SDWebImageManager
 @property (nonatomic) SDImageCacheType cacheType;
@@ -33,12 +33,12 @@
 }
 
 - (void)testSimpleLoadNoCache {
-    WebImageView* imageView = [[WebImageView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
+    AwesomeWebImageView* imageView = [[AwesomeWebImageView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
     XCTAssertNil(imageView.image);
     
     XCTKVOExpectation* imageSettled = [[XCTKVOExpectation alloc] initWithKeyPath:@"image" object:imageView];
     imageSettled.handler = ^BOOL(id  _Nonnull observedObject, NSDictionary * _Nonnull change) {
-        WebImageView* imageView = observedObject;
+        AwesomeWebImageView* imageView = observedObject;
         if ([change[NSKeyValueChangeKindKey] unsignedIntegerValue] == NSKeyValueChangeSetting) {
             if (imageView.image != nil) {
                 XCTAssertEqualWithAccuracy(imageView.image.size.width, 64, 0.001);
@@ -58,12 +58,12 @@
 - (void)testSimpleLoadDiskCache {
     self.sdManager.cacheType = SDImageCacheTypeDisk;
     
-    WebImageView* imageView = [[WebImageView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
+    AwesomeWebImageView* imageView = [[AwesomeWebImageView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
     XCTAssertNil(imageView.image);
     
     XCTKVOExpectation* imageSettled = [[XCTKVOExpectation alloc] initWithKeyPath:@"image" object:imageView];
     imageSettled.handler = ^BOOL(id  _Nonnull observedObject, NSDictionary * _Nonnull change) {
-        WebImageView* imageView = observedObject;
+        AwesomeWebImageView* imageView = observedObject;
         if ([change[NSKeyValueChangeKindKey] unsignedIntegerValue] == NSKeyValueChangeSetting) {
             if (imageView.image != nil) {
                 XCTAssertEqualWithAccuracy(imageView.image.size.width, 64, 0.001);
@@ -83,12 +83,12 @@
 - (void)testSimpleLoadMemCache {
     self.sdManager.cacheType = SDImageCacheTypeMemory;
     
-    WebImageView* imageView = [[WebImageView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
+    AwesomeWebImageView* imageView = [[AwesomeWebImageView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
     XCTAssertNil(imageView.image);
     
     XCTKVOExpectation* imageSettled = [[XCTKVOExpectation alloc] initWithKeyPath:@"image" object:imageView];
     imageSettled.handler = ^BOOL(id  _Nonnull observedObject, NSDictionary * _Nonnull change) {
-        WebImageView* imageView = observedObject;
+        AwesomeWebImageView* imageView = observedObject;
         if ([change[NSKeyValueChangeKindKey] unsignedIntegerValue] == NSKeyValueChangeSetting) {
             if (imageView.image != nil) {
                 XCTAssertEqualWithAccuracy(imageView.image.size.width, 64, 0.001);
@@ -110,7 +110,7 @@
     onLoadCalled.expectedFulfillmentCount = 1;
     onLoadCalled.assertForOverFulfill = YES;
     
-    WebImageView* imageView = [[WebImageView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
+    AwesomeWebImageView* imageView = [[AwesomeWebImageView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
     imageView.onWebImageLoad = ^(NSDictionary *body) {
         NSDictionary* expected = @{
                                    @"source": @{
@@ -138,7 +138,7 @@
     onErrorCalled.expectedFulfillmentCount = 1;
     onErrorCalled.assertForOverFulfill = YES;
     
-    WebImageView* imageView = [[WebImageView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
+    AwesomeWebImageView* imageView = [[AwesomeWebImageView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
     imageView.onWebImageLoad = ^(NSDictionary *body) {
         XCTFail(@"onLoad should not be called");
     };
