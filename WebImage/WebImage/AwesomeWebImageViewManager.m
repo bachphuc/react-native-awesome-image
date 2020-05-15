@@ -1,10 +1,10 @@
-#import "WebImageViewManager.h"
+#import "AwesomeWebImageViewManager.h"
 #import "WebImageSource.h"
 #import "AwesomeWebImageView.h"
 
 #import <React/RCTViewManager.h>
 
-@interface WebImageViewManager : RCTViewManager
+@interface AwesomeWebImageViewManager : RCTViewManager
 
 @end
 
@@ -18,7 +18,7 @@
 
 @end
 
-@implementation WebImageViewManager
+@implementation AwesomeWebImageViewManager
 
 RCT_EXPORT_MODULE()
 

@@ -156,7 +156,7 @@
 		28055D8FE4A698324872C0597E346772 /* RCTConvert+CoreLocation.h in Headers */ = {isa = PBXBuildFile; fileRef = 12990D7177C6785789E65CE2FE2FA2AA /* RCTConvert+CoreLocation.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		2873BBFAC3AAFB4547167C498F567122 /* RCTSpringAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = E25181AD97739BB3343784EC6FCBF511 /* RCTSpringAnimation.m */; };
 		28DE544E7FFEBE9260954ED8D4D05640 /* RCTModalHostViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E771CAD0984B5261D5558F4A4C84718 /* RCTModalHostViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		29B14DC72FDD117A5101FF9B342AA78A /* WebImageViewManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 09D5CF00D6AF73BADF8104D4C2931D43 /* WebImageViewManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		29B14DC72FDD117A5101FF9B342AA78A /* AwesomeWebImageViewManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 09D5CF00D6AF73BADF8104D4C2931D43 /* AwesomeWebImageViewManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		29E1E3350B6FDD456A1A2C8B1D51B721 /* RCTWebSocketModule.m in Sources */ = {isa = PBXBuildFile; fileRef = DFCE46BF75DD4F2063B8C3CAFD33E1BB /* RCTWebSocketModule.m */; };
 		2A85E8A051977BB7A8379E724CCD300E /* RCTMultipartDataTask.m in Sources */ = {isa = PBXBuildFile; fileRef = ED021B5E7EC42944F9245F790086B7CC /* RCTMultipartDataTask.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1 -Wno-comma -Wno-shorten-64-to-32 -Wno-documentation"; }; };
 		2AC7FBA88AB7D96A87731F91E12717AF /* RCTTextRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = A8A33808FC3137684BE53E8E93B51946 /* RCTTextRenderer.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -166,7 +166,7 @@
 		2B8DBBD0B12779D9C62B30D8D30BA557 /* SDImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 56AB3F9DDEB15E73B866750F780E651D /* SDImageCache.m */; };
 		2BDEDB0CFA0B2BC566A697B3D47FA60C /* SDWebImageError.h in Headers */ = {isa = PBXBuildFile; fileRef = CDA1D67DB16DC4451AE668FFA4D578BA /* SDWebImageError.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		2C2704445E745FE4973602B9E69F8295 /* RCTExceptionsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 54398085CAA69E7B61A3F0C8D97F1C2E /* RCTExceptionsManager.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1 -Wno-comma -Wno-shorten-64-to-32 -Wno-documentation"; }; };
-		2C588D8A83D57E0D09598C6F2F607D2C /* WebImageViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AC2AC1833581D2AAAC450987E61B5AD5 /* WebImageViewManager.m */; };
+		2C588D8A83D57E0D09598C6F2F607D2C /* AwesomeWebImageViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AC2AC1833581D2AAAC450987E61B5AD5 /* AwesomeWebImageViewManager.m */; };
 		2CA6C16B08FBB222B2C39F996FDBA3FA /* String.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 85851ACF5F6C68B3311C6B66E7C9EC43 /* String.cpp */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1 -DFOLLY_HAVE_PTHREAD=1 -Wno-comma -Wno-shorten-64-to-32 -Wno-documentation"; }; };
 		2CD774CA42D3D80C06F4C793FC12FD86 /* RCTImageBlurUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 225A60274FCDF6E1447E44B70C95E84F /* RCTImageBlurUtils.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		2D33D72BC816ECCFC615C729D002DCF7 /* RCTURLRequestHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = A45BC3E30A9650B911447DC632A6F591 /* RCTURLRequestHandler.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -1325,7 +1325,7 @@
 		09750C061893577491C9419D8B140E3B /* fishhook.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = fishhook.h; sourceTree = "<group>"; };
 		098424FC8DD52D2B756E098435E4ADE7 /* InspectorInterfaces.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = InspectorInterfaces.h; sourceTree = "<group>"; };
 		09C61D100CB719C47FB02D21355DAEAF /* RCTMultipartStreamReader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTMultipartStreamReader.m; sourceTree = "<group>"; };
-		09D5CF00D6AF73BADF8104D4C2931D43 /* WebImageViewManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WebImageViewManager.h; path = WebImage/WebImage/WebImageViewManager.h; sourceTree = "<group>"; };
+		09D5CF00D6AF73BADF8104D4C2931D43 /* AwesomeWebImageViewManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AwesomeWebImageViewManager.h; path = WebImage/WebImage/AwesomeWebImageViewManager.h; sourceTree = "<group>"; };
 		0A007F7BAC022EEBD2EF1BA16445A5ED /* RCTProfileTrampoline-arm.S */ = {isa = PBXFileReference; includeInIndex = 1; path = "RCTProfileTrampoline-arm.S"; sourceTree = "<group>"; };
 		0A30F9F8CFB0FA3E37B48FD1C76A8EB5 /* JSDeltaBundleClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JSDeltaBundleClient.h; sourceTree = "<group>"; };
 		0A65CD5D483F4A3190AE1A29D67C8484 /* SDWebImageDownloaderConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDownloaderConfig.m; path = SDWebImage/SDWebImageDownloaderConfig.m; sourceTree = "<group>"; };
@@ -1845,7 +1845,7 @@
 		ABA6C2B129684064C19B1EA521C09E2C /* RCTResizeMode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTResizeMode.m; sourceTree = "<group>"; };
 		ABC95E524E9DE375F433E6EE814CB8C6 /* React-RCTLinking-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "React-RCTLinking-dummy.m"; sourceTree = "<group>"; };
 		AC1918A387E12AB3BD070666B73AD607 /* AwesomeWebImageView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AwesomeWebImageView.h; path = WebImage/WebImage/AwesomeWebImageView.h; sourceTree = "<group>"; };
-		AC2AC1833581D2AAAC450987E61B5AD5 /* WebImageViewManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WebImageViewManager.m; path = WebImage/WebImage/WebImageViewManager.m; sourceTree = "<group>"; };
+		AC2AC1833581D2AAAC450987E61B5AD5 /* AwesomeWebImageViewManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AwesomeWebImageViewManager.m; path = WebImage/WebImage/AwesomeWebImageViewManager.m; sourceTree = "<group>"; };
 		AC69A8D183DC8C2047EFB9103F043FEC /* RCTSegmentedControl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTSegmentedControl.h; sourceTree = "<group>"; };
 		AC803E567B8BEAD116913CA841820BDF /* RCTSafeAreaShadowView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTSafeAreaShadowView.m; sourceTree = "<group>"; };
 		ACE9E9422B13336245631E5CB687BECA /* RCTViewManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTViewManager.m; sourceTree = "<group>"; };
@@ -3392,8 +3392,8 @@
 				863D5E405AA8446618E04ECEE0A47302 /* WebImageSource.m */,
 				AC1918A387E12AB3BD070666B73AD607 /* AwesomeWebImageView.h */,
 				23FFB9398B5CA47A2393E97FBC9C14E2 /* AwesomeWebImageView.m */,
-				09D5CF00D6AF73BADF8104D4C2931D43 /* WebImageViewManager.h */,
-				AC2AC1833581D2AAAC450987E61B5AD5 /* WebImageViewManager.m */,
+				09D5CF00D6AF73BADF8104D4C2931D43 /* AwesomeWebImageViewManager.h */,
+				AC2AC1833581D2AAAC450987E61B5AD5 /* AwesomeWebImageViewManager.m */,
 				F4387FE62D5C8E45010DE3EB9559D642 /* Pod */,
 				AF343DF7E9812254613CB17AA3E6BB5F /* Support Files */,
 			);
@@ -4481,7 +4481,7 @@
 			files = (
 				81568156F4F61DF8BBE9262E26C39FD4 /* WebImageSource.h in Headers */,
 				74C2119E6EC8ACBF002E297225D31A81 /* AwesomeWebImageView.h in Headers */,
-				29B14DC72FDD117A5101FF9B342AA78A /* WebImageViewManager.h in Headers */,
+				29B14DC72FDD117A5101FF9B342AA78A /* AwesomeWebImageViewManager.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -5215,7 +5215,7 @@
 				C10E7431B1245C2AF415CC7AA97ACCA6 /* react-native-awesome-image-dummy.m in Sources */,
 				B48939FAC9F28AF79FB318EB2B152571 /* WebImageSource.m in Sources */,
 				1B29818F3C827CCE85032F29B2A79857 /* AwesomeWebImageView.m in Sources */,
-				2C588D8A83D57E0D09598C6F2F607D2C /* WebImageViewManager.m in Sources */,
+				2C588D8A83D57E0D09598C6F2F607D2C /* AwesomeWebImageViewManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

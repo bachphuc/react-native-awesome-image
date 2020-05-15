@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A254B3E81E2AC847000BE088 /* AwesomeWebImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = A254B3E71E2AC847000BE088 /* AwesomeWebImageView.m */; };
-		A28797311DE0C1E90081BDFA /* WebImageViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A28797301DE0C1E90081BDFA /* WebImageViewManager.m */; };
+		A28797311DE0C1E90081BDFA /* AwesomeWebImageViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A28797301DE0C1E90081BDFA /* AwesomeWebImageViewManager.m */; };
 		A28797471DE0CAB10081BDFA /* libSDWebImage iOS static.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A287973E1DE0CA5B0081BDFA /* libSDWebImage iOS static.a */; };
 		A287974A1DE0CE9B0081BDFA /* WebImageSource.m in Sources */ = {isa = PBXBuildFile; fileRef = A28797491DE0CE9B0081BDFA /* WebImageSource.m */; };
 /* End PBXBuildFile section */
@@ -74,8 +74,8 @@
 		A254B3E61E2AC847000BE088 /* AwesomeWebImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AwesomeWebImageView.h; sourceTree = "<group>"; };
 		A254B3E71E2AC847000BE088 /* AwesomeWebImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AwesomeWebImageView.m; sourceTree = "<group>"; };
 		A287971D1DE0C0A60081BDFA /* libWebImage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libWebImage.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		A28797301DE0C1E90081BDFA /* WebImageViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebImageViewManager.m; sourceTree = "<group>"; };
-		A28797321DE0C2000081BDFA /* WebImageViewManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebImageViewManager.h; sourceTree = "<group>"; };
+		A28797301DE0C1E90081BDFA /* AwesomeWebImageViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AwesomeWebImageViewManager.m; sourceTree = "<group>"; };
+		A28797321DE0C2000081BDFA /* AwesomeWebImageViewManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AwesomeWebImageViewManager.h; sourceTree = "<group>"; };
 		A28797341DE0CA5B0081BDFA /* SDWebImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SDWebImage.xcodeproj; path = Vendor/SDWebImage/SDWebImage.xcodeproj; sourceTree = "<group>"; };
 		A28797481DE0CE9B0081BDFA /* WebImageSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebImageSource.h; sourceTree = "<group>"; };
 		A28797491DE0CE9B0081BDFA /* WebImageSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebImageSource.m; sourceTree = "<group>"; };
@@ -113,8 +113,8 @@
 		A287971F1DE0C0A60081BDFA /* WebImage */ = {
 			isa = PBXGroup;
 			children = (
-				A28797321DE0C2000081BDFA /* WebImageViewManager.h */,
-				A28797301DE0C1E90081BDFA /* WebImageViewManager.m */,
+				A28797321DE0C2000081BDFA /* AwesomeWebImageViewManager.h */,
+				A28797301DE0C1E90081BDFA /* AwesomeWebImageViewManager.m */,
 				A254B3E61E2AC847000BE088 /* AwesomeWebImageView.h */,
 				A254B3E71E2AC847000BE088 /* AwesomeWebImageView.m */,
 				A28797481DE0CE9B0081BDFA /* WebImageSource.h */,
@@ -252,7 +252,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A28797311DE0C1E90081BDFA /* WebImageViewManager.m in Sources */,
+				A28797311DE0C1E90081BDFA /* AwesomeWebImageViewManager.m in Sources */,
 				A254B3E81E2AC847000BE088 /* AwesomeWebImageView.m in Sources */,
 				A287974A1DE0CE9B0081BDFA /* WebImageSource.m in Sources */,
 			);
